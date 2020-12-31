@@ -45,6 +45,8 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     font-size: clamp(28px, 5vw, 50px);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 button,
