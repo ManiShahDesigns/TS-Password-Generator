@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Password Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="inner-body">
+        <h1>Easy Password Generator</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="width-50">
+                    <label for="password-length">Password length</label>
+                    <select name="length" id="password-length">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                    </select>
+                </div>
+
+                <div class="width-50 pretty p-switch p-fill">
+                    <input type="checkbox" name="uppercase-chars" id="uppercase-checkbox">
+                    <div class="state">
+                        <label for="uppercase-checkbox">Include uppercase letters</label>
+                    </div>
+                </div>
+
+                <div class="width-50 pretty p-switch p-fill">
+                    <input type="checkbox" name="numbers" id="numbers-checkbox">
+                    <div class="state">
+                        <label for="numbers-checkbox">Include numbers</label>
+                    </div>
+                </div>
+
+                <div class="width-50 pretty p-switch p-fill">
+                    <input type="checkbox" name="symbols" id="symbols-checkbox">
+                    <div class="state">
+                        <label for="symbols-checkbox">Include symbols</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button href="#" id="generate-password" class="generate-password">
+            Generate Password
+        </button>
+
+        <div id="generated-password" class="generated-password"></div>
+
+    </div>
+
+    <script defer src="./app.js"></script>
+
+</body>
+
+</html>
